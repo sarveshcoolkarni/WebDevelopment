@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+<body>
+    <h1 id="h1">welcome</h1>
+    <div id="div"></div>
+        <input type="button" value="Hi Sarvesh" onclick="getPhone()" id="phoneid">
+    </div>
+    <input type="text" placeholder="Enter phone no" id="input1">
+    <input type="button" onclick="getPhone()" id="btn1" value="+">
+    <input type="button" onclick="removePhone()" id="btn2" value="-">
+   
+    <script>
+    
+ function getPhone(){
+
+   const input = document.createElement("input");
+   input.setAttribute("type","text");
+   input.setAttribute("id","phone");
+   input.setAttribute("placeholder", "enter phone number");
+   const containerdiv = document.getElementById("div");
+   containerdiv.appendChild(input);
+  
+ }
+ function removePhone() {
+  const input = document.getElementById("phoneid");
+  const containerdiv=document.getElementById("div");
+
+  containerdiv.remove(input);
+}
+   
+
+    </script>
+    </body>
+    </html> 

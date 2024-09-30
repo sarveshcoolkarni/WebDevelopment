@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+<body>
+    <h1 id="h1">welcome</h1>
+    <input type="button" value="Hi Sarvesh" onclick="getContent()">
+    <script>
+    
+    function getContent(){
+   
+    var ref = document.getElementById("h1");
+    console .log(ref);
+    console.log(ref.innerHTML);
+    console.log(ref.innerText);
+        ref.innerText="<h1>Hi Sarthak</h1>";
+        ref.innerHTML="<h1>Hi Sarthak</h1>";
+
+
+}
+    </script>
+    </body>
+    </html>

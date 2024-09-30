@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="budget.css">
+   <script type="text/javascript" src="budget.js"></script>
+</head>
+<body>
+    <div class="outer-div">
+        <H1>Loan Calculator</H1>
+        <div class="inner-div">
+            <input type="text" class="paisa" id="amnt" placeholder="Enter Your Amount">
+            <input type="text" class="rate" id="roi" placeholder="Rate Of Interest">
+            <input type="text" class="months" id="months" placeholder="Enter No Of Years">
+           
+            <button class="simple" onclick="simple()">Simple Interest</button>
+            <button class="Compound" onclick="compound()">Compound Interest</button>
+            <a href="./loan.html"><button class="Emi">Calculate EMI</button></a>
+            <input id="res" readonly placeholder="Amount of Interest is: "></input>
+        </div>
+    </div>
+    <script class="op">
+         res.value = `Rate of Interest is:${result}`;
+         res.value = `Rate of Interest is:${result1}`;
+
+    </script>
+</body>
+</html>

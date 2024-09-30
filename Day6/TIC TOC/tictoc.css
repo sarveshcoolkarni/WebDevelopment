@@ -1,0 +1,17 @@
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.square {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+.square:hover {
+	background-color: #ccc;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<style>
+   table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   }
+   td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+   }
+   table, tr :nth-child(even) {
+    background-color: #f2f2f2;
+   }
+   table tr:hover {background-color: #ddd;}
+   table th, tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: black;
+    }
+</style>
+<body>
+    <div id="container">
+        <table border="1" cellspacing="1" cellpadding="5" id="table">
+            <thead id="heading">
+                <tr id="row">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="details">
+            </tbody>
+        </table>
+    </div>
+    <input type="submit" value="Submit" onclick="fetchdata()">
+    <script>
+        fetchdata = () => {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+            xhr.send();
+            xhr.onreadystatechange = () => {
+                if(xhr.status==200 && xhr.readyState==4) {
+                    console.log(xhr.status);
+                    var str = JSON.parse(xhr.responseText);
+                    for(i=0; i<str.length; i++) {
+                        $("#details").append(
+                        $("<tr>").html(`
+                        <td>${str[i].id}</td>
+                        <td>${str[i].name}</td>
+                        <td>${str[i].email}</td>
+                        <td>${str[i].phone}</td>
+                        `)
+                    );
+                    }
+                }
+            }
+
+        } 
+    </script>
+</body>
+</html>

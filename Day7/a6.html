@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <div id="container">
+        <input type="text" placeholder="enter phno" id="phoneid">
+    </div>
+    <input type="button" value="-" onclick="removeField()">
+    <input type="button" value="+"  onclick="generateField()">
+
+    <script>
+       
+function generateField(){
+    const input=document.createElement("input"); 
+    input.setAttribute("type","text");
+    input.setAttribute("placeholder","enter phone");
+    const containerdiv=document.getElementById("container");
+    containerdiv.appendChild(input);
+    }
+
+function removeField(){
+const phoneField=document.getElementById("phoneid");
+const containerdiv=document.getElementById("container");
+containerdiv.remove(phoneid);
+}
+
+    </script>
+    </body>
+    
+
+    </html>

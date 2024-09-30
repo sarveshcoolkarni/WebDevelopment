@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+integrity="sha256-
+243
+u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+crossorigin="anonymous"></script>
+</head>
+<body>
+<button type="button" name="button">Dont Talk First
+Warning</button>
+<button type="button" name="button">Dont Talk Second
+Warning</button>
+<button type="button" name="button">Dont Talk Third
+Warning</button>
+<script type="text/javascript">
+$('h1').click(function(){
+    alert('Click any button, you will get greetings message')
+    })
+    $('button:first').click(function(){
+    alert('Hello Dont Talk')
+    $(this).css('background','yellow')
+    })
+    $('button:nth-of-type(2)').click(function(){
+    alert('Hello Dont Talk, I will beat you')
+    $(this).css('background','orange')
+    })
+    $('button:last').click(function(){
+    alert('Hello Stupid, dont talk, I will punish you')
+    $(this).css('background','red')
+    })
+    
+</script>
+</body>
+</html>

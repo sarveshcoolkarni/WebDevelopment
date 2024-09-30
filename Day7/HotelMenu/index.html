@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hotel Darbar</h1>
+    </div>
+    <div class="display-menu">
+        <h4>Menu</h4>
+        
+        
+        <hr>
+        
+        <ol>
+           
+        
+           
+            <li style="margin-top: 3px;">Veg Thali<p>&#8377; 150</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Idli<p>&#8377; 40</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Dosa<p>&#8377; 70</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Masala Dosa<p>&#8377; 90</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Poha<p>&#8377; 30</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Upma<p>&#8377; 30</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <li>Rice<p>&#8377; 60</p><hr style="margin-top: 1px; margin-right: 40px;">
+            </li>
+            <br>
+        </ol>
+    </div>
+    <div class="inner-container">
+        <form class="form-input">
+            <P style="color: rgb(206, 118, 37);">Invoice</P>
+            <div class="menu-item">
+                <select>
+                    <option id="optdef" class="default" value="Select Menu" selected>Select Menu</option>
+                    <option id="opt1" value="Veg Thali">Veg Thali</option>
+                    <option id="opt1" value="Idli">Idli</option>
+                    <option id="opt1" value="Dosa">Dosa</option>
+                    <option id="opt1" value="Masala Dosa">Masala Dosa</option>
+                    <option id="opt1" value="Poha">Poha</option>
+                    <option id="opt1" value="Upma">Upma</option>
+                    <option id="opt1" value="Rice">Rice</option>
+                </select>
+            </div>
+        </form>
+        <input type="button" class="btn1" id="addbtn" onclick="additem()" value="Add Item">
+        <input type="button" class="btn3" id="removebtn" onclick="removeitem()" value="Remove Item">
+        <hr>
+
+
+
+
+    </div>
+</body>
+
+</html>

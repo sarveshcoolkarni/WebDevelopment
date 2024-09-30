@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="test1.js"></script>
+<style>
+     div{
+     height: 100px;
+     width: 100px;
+     background: rgb(116, 65, 7);
+     color:white;
+     margin:20px;
+     text-align: center;
+     float: left;
+     }
+     </style>
+
+</head>
+<body>
+   
+     <button type="button" name="button">Fade out</button>
+     <div>First Div</div>
+     <div>Second Div</div>
+     <div>Third Div</div>
+     <div>Fourth Div</div>
+     <button type="button" name="button2" id="button2">Fade In</button>
+<script type="text/javascript">
+   
+$('button').on('click',function(){
+    $('div').fadeOut(1000);
+     })
+$('#button2').on('click', () => {
+    $('div').fadeIn(1000);
+})
+
+</script>
+</body>
+</html>

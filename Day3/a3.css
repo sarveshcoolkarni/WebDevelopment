@@ -1,0 +1,19 @@
+summary {
+    text-align: center;
+    color: red;
+    font-size: 32px;
+}
+li {
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+    text-align: start;
+    font-size: 20px;
+}
+img {
+    border: 5px;
+    border-style: outset;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+}

@@ -1,0 +1,113 @@
+I'll be happy to help you with these questions. Here are the answers:
+
+To insure that this function is overridden in derived classes that are to be instantiated.
+eliminates redundant classes
+Inheritance
+declare f a friend in C
+When they have same name and diff type of parameters or diff no of parameters, return type does not matter.
+a, b and d
+c) the derived class
+
+c) Deriving classes
+
+c) Multilevel
+
+d) both (a) and (c) above
+
+d) (ii) is true & (i) is false
+
+d) virtual void funct (int n) = 0;
+
+b) public
+
+b) from the point of definition onward in the block
+
+d) if friend is declared in private, it works differently when declared in public.
+
+b) reference
+
+a) macro
+
+c) statement (iii) & (iv) are correct
+
+e) both (b) and (c) above
+
+a) 1
+
+d) the function accesses the arguments original value in the calling program
+
+d) a class object and a member of that class
+
+d) all of the above
+
+d) both (a) and (b) above
+
+a) access exactly the same array as the calling program
+
+b) there are multiple paths from one derived class to another
+
+d) both (a) and (b) above
+
+a) specifics a particular class and resolves ambiguities
+
+b) describes “is a kind of” relationship
+
+c) delete []a;
+
+c) A pointer may be added to another pointer.
+
+d) All of the above
+
+a) friend
+
+c) A static member
+
+d) Is visible in the class it is declared in, and all of its subclasses.
+
+b) A function that is called when an instance of a class is deleted.
+
+b) The public members of the base class become protected.
+
+c) There will be only one instance of the variable initialized for all classes.
+
+d) All of the above.
+
+b) destructors
+
+c) Both 1 and 2 are correct.
+
+a) Copy Constructor
+
+c) The class must have a function definition equal to zero
+
+c) Constructor
+
+b) Virtual Functions
+
+d) Static function can be overrided.
+
+d) All of the above
+
+d) int *arr = new int[10];
+
+c) The "Delete" is used for deleting a single standard object, whereas the "Delete[]" is used for deleting an array of the multiple objects
+
+b) 12
+
+b) A reference cannot refer to a constant value
+
+a) Copy constructor
+
+c) It is the ability to process the message or data in more than one form
+
+a) 13
+
+c) virtual void Display(void) = 0;
+
+c) Static
+
+c) Singleton class
+
+d) Overloaded functions can accept only different number and different type of arguments.
+
+a) The trailing argument will be the default argument.

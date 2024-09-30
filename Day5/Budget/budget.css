@@ -1,0 +1,78 @@
+
+.outer-div {
+    width: 350px;
+    height: 500px;
+    background-color: #5c5757e0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 20px;
+}
+
+.inner-div {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    transform: translateX(8%) translateY(0%);
+    border: 2px solid rgb(3, 3, 73);
+    border-radius: 5px;
+    background-color: rgb(214, 218, 218);
+    border: none;
+}
+.outer-div > h1 {
+    text-align: center;
+    color: white;
+}
+.paisa{
+    transform: translateX(30%) translateY(100%);
+
+}
+
+.rate{
+    transform: translateX(30%) translateY(200%);
+
+}
+.months{
+    transform: translateX(30%) translateY(300%);
+
+}
+.simple{
+    transform: translateX(0%) translateY(1500%);
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5c5757e0;
+}
+
+.simple:hover{
+  background-color: #5c5757e0;
+  color: white;
+
+}
+
+.Compound{
+    transform: translateX(8%) translateY(1400%);
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5c5757e0;
+}
+
+.Compound:hover{
+  background-color: #5c5757e0;
+  color: white;
+
+}
+.Emi {
+    transform: translateX(-116%) translateY(1000%);
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5c5757e0;
+}
+.Emi:hover {
+    background-color: #5c5757e0;
+    color: white;  
+}
+#res {
+    transform: translateX(30%) translateY(400%);
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Login
+    </h1>
+        <input type="submit" value="Submit" onclick="AsyncData()">
+    </form>
+    <script>
+        const AsyncData = () => {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://jsonplaceholder.typicode.com/users");
+            xhr.send();
+            xhr.onreadystatechange = () => {
+                console.log("state changed: ", xhr.readyState);
+                if(xhr.readyState == 4 && xhr.status == 400) {
+                    console.log(xhr.responseText);
+                    const d = JSON.parse(xhr.responseText);
+                    console.log(d);
+                } 
+            } 
+        }
+    </script>
+</body>
+</html>

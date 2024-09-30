@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a2.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <button id="animals" class="animalbtn" name="animals">Animals</button>
+    </div>
+    <div class="anitypebtn">
+        <button id="carnivorous" name="hetrogenous" style="visibility: hidden;" >Carnivorous Animals</button>
+        <button id="herbivorous" style="margin-left: 20px; visibility: hidden;" name="homogenous">Herbivorous Animals</button>
+    </div>
+    <div class="carnitype" style="visibility: hidden;">
+        <button class="c1" id="c1">Artic Wolf</button>
+        <button class="c1" id="c2">Lepord</button>
+        <button class="c1" id="c3">Cheetah</button>
+        <button class="c1" id="c4">Lion</button>
+        <button class="c1" id="c5">Tiger</button>
+        <button class="herbitype" id="h1">Giraffe</button>
+        <button class="herbitype" id="h2">Goat</button>
+        <button class="herbitype" id="h3">Cow</button>
+        <button class="herbitype" id="h4">Horse</button>
+        <button class="herbitype" id="h5">Zebra</button>
+
+    </div>
+    <img id="carnimg" src="" style="margin-left: 20rem; margin-top: 20px;">
+
+    <script>
+        $('#animals').on('click', () => {
+            const a = $('#carnivorous').css('visibility');
+            const b = $('#herbivorous').css('visibility');
+            if (a === 'visible' && b === 'visible') {
+                $('#carnivorous').css('visibility', 'hidden')
+                $('#herbivorous').css('visibility', 'hidden')
+            }
+            else {
+                $('#carnivorous').css('visibility', 'visible')
+                $('#herbivorous').css('visibility', 'visible')
+                //write further code
+                //for carnivorous
+                if($('#carnivorous').on('click', ()=> {
+                     const carbtn = $('.c1').css('visibility');
+                     if(carbtn==='hidden') {
+                        $('.c1').css('visibility', 'visible')
+                     }
+                     else {
+                        $('.c1').css('visibility', 'hidden')
+                     }
+                 }));
+                if($('#herbivorous').on('click', ()=> {
+                    const herbtn = $('.herbitype').css('visibility');
+                    if(herbtn==='hidden') {
+                        $('.herbitype').css('visibility', 'visible')
+                        if($('#h1').on('click', () => {
+                            const sty = $('#carnimg').attr('src','./giraffe.jpg').css('visibility', 'visible');
+                            if($('#h1').on('click', () => {
+                                $('#carnimg').css('visibility', 'hidden');
+                            }));
+                        })); 
+                    } else {
+                        $('.herbitype').css('visibility', 'hidden');
+                    }
+                 }));
+            }
+        });
+
+    </script>
+</body>
+
+</html>

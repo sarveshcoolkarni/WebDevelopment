@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulb On/Off</title>
+    <style>
+        #bulb {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        #bulb.on {
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+	<button id="bulb-on">Turn On</button>
+    <button id="bulb-off">Turn Off</button>
+<!--	<img src="https://th.bing.com/th?id=OIP.SiHs238w_i8Vn1N5_OZMBwAAAA&w=204&h=306&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="bulb off" id="bulboff">
+    <img src="https://th.bing.com/th?id=OIP.565TcOat3QSHtMsuwdW4WwAAAA&w=247&h=252&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="bulb on" id="bulbon"> -->
+    <img src="" id="bulbon">
+
+	<script>
+       let onbutton = document.getElementById('bulb-on');
+       let offbutton = document.getElementById('bulb-off');
+       let imgid = document.getElementById('bulbon');
+       onbutton.addEventListener('click', () => {
+        imgid.setAttribute('src', 'https://th.bing.com/th?id=OIP.565TcOat3QSHtMsuwdW4WwAAAA&w=247&h=252&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2')
+
+       });
+       offbutton.addEventListener('click', () => {
+        imgid.setAttribute('src', 'https://th.bing.com/th?id=OIP.SiHs238w_i8Vn1N5_OZMBwAAAA&w=204&h=306&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2')
+       });
+
+    </script>
+</body>
+</html>

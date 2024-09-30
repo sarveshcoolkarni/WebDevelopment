@@ -1,0 +1,37 @@
+.animalbtn {
+    margin-left: 30rem;
+    margin-top: 5rem;
+}
+.hetrobtn {
+    visibility: hidden;
+    display: inline block;
+    margin-top: 5rem;
+    padding-left: 24rem;
+}
+.anitypebtn {
+    display: inline-block;
+  }
+
+  .anitypebtn button {
+    margin-left: 23rem;
+    margin-top: 4rem;
+  }
+  .carnilist {
+    margin-left: 15rem;
+  }
+  .carnitype {
+    margin-top: 8rem;
+    margin-left: 8rem;
+  }
+  .c1, .c2, .c3, .c4, .c5 {
+    margin-right: 1rem;
+
+  }
+  .herbitype {
+    display: inline-block;
+    margin-left: 20rem;
+  }
+  .herbitype {
+    margin-left: 1.2rem;
+  }
+  
